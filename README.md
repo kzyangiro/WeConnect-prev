@@ -1,0 +1,2 @@
+A project that manages businesses. A user is able to sign up and log into the working area, after which the user can add businesses and manage them by either updating, deliting, writing reviews and viewing reviews from others. 
+The user is able to filter the display of the businesses by either by location or category
