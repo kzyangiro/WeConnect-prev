@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>WeConnect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<style>
+    
+    .jumbotron{
+        padding:10px;
+        font-weight: bold;}
+    .signinDiv1{
+        background-color: #eee;
+        text-align: right;
+        border-radius:10px;
+        padding-right: 15%;
+    }
+    a{
+        color:white;
+    }
+    h4{
+        text-align: left !important;
+        color:maroon;
+    }
+    .main-nav{
+        float:right
+    }
+    .btn{
+        margin:10px;
+    }
+    .signupDiv{
+        display: none;
+    }
+</style>
+
+<script type="text/javascript">
+  
+    $(document).ready(function(){
+        $("#signin").click(function(){
+            
+            $("#signinDiv").show(200);
+            $("#signupDiv").hide(200);
+        });
+    
+        $("#signup").click(function(){
+            
+            $("#signinDiv").hide(200);
+            $("#signupDiv").show(200);
+        });
+    });
+
+</script>
+<body>
+    <div class="jumbotron">
+        <h2>WeConnect</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+                <div class="col-md-12">
+                    <div class="main-nav">
+                            <ul>
+                                <!-- inser more links here -->
+                                <button class="btn btn-primary" id="signin">Sign in</button>
+                                <button class="btn btn-primary" id="signup">Sign up</button>
+                            </ul>
+                        </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div class="signinDiv">
+                            <h4>Sign In:</h4><br>
+                            <div class="signinDiv1"><br><br>
+                                <form method="post" enctype="multipart/form-data">
+
+                                    Username: <input type="text" id="text" required ><br><br>
+                                    Password: <input type="password" id="text" required><br><br>
+
+                                    <input type="submit" name="submit1" id="submit" value="Login"><br><br>
+                                    
+                                </form>
+                            </div></div>
+
+                            <div class="signupDiv">
+                                    <h4>Sign Up:</h4><br>
+                                    <div class="signinDiv1"><br><br>
+                                        <form method="post" enctype="multipart/form-data">
+        
+                                            FullName: <input type="text" id="text" required ><br><br>
+                                            Username: <input type="text" id="text" required ><br><br>
+                                            Password: <input type="password" id="text" required><br><br>
+                                            Confirm Password: <input type="text" id="text" required ><br><br>
+        
+                                            <input type="submit" name="submit1" id="submit" value="Sign Up"><br><br>
+                                            
+                                        </form>
+                                    </div></div>
+
+
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    </div>
+        </div>
+    </div>
+    
+</body>
+</html>
